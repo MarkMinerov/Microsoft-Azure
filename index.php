@@ -7,6 +7,6 @@
   <title>Document</title>
 </head>
 <body>
-  <h1><?php="I love Yura Murha!"?></h1>
+  <h1><?php echo "I love Yura Murha!"?></h1>
 </body>
 </html>
