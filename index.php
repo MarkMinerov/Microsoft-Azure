@@ -4,42 +4,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>IoT Lock</title>
+  <style>
+    input[type="text"] {
+      width: 15rem;
+      border: 1px solid orange;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    li span {
+      margin-right: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Register form</h1>
-  <form action="form.php" method="post">
-    <label for="name">
-      Enter your name:
-      <input id="name" type="text" name="name" placeholder="Enter your name">
-    </label>
+  <h2>IoT Admin Panel</h2>
+  <form id="pinForm">
+    <input id="prevPinInput" type="text" placeholder="Enter previous pin" required>
     <br><br>
-    <label for="surname">
-      Enter your surname:
-      <input id="surname" type="text" name="surname" placeholder="Enter your surname">
-    </label>
+    <input id="newPinInput" type="text" placeholder="Enter new pin" required>
     <br><br>
-    <label for="email">
-      Enter your email:
-      <input id="email" type="email" name="email" placeholder="Enter your email">
-    </label>
-    <br><br>
-    <label for="url">
-      Enter your profile logo url:
-      <input id="url" type="url" name="url" placeholder="URL">
-    </label>
-    <br><br>
-    <label for="tel">
-      Enter your phone number:
-      <input id="tel" type="tel" name="tel" placeholder="Enter your phone number">
-    </label>
-    <br><br>
-    <label for="food">
-      Enter food you like:
-      <input id="food" type="text" name="food" placeholder="Enter food you like">
-    </label>
+    <input type="submit" value="Change pin">
     <br><br><br>
-    <input type="submit" value="Send">
   </form>
+
+  <form id="addChipForm">
+    <input type="text" placeholder="Enter chip id to add new one..." id="addChipInput" required>
+    <br><br>
+    <input type="submit" value="Add new chip">
+  </form>
+
+  <ul id="chipsList"></ul>
+
+  <script defer src="main.js"></script>
 </body>
 </html>
