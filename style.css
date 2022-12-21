@@ -1,0 +1,92 @@
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 0;
+}
+
+body {
+  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-cloud-background_41066-1919.jpg?w=2000");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 3rem 7rem;
+}
+.container h2 {
+  color: plum;
+}
+.container #pinForm,
+.container #addChipForm {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container #pinForm {
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+.container input[type=text] {
+  width: 20rem;
+  height: 3rem;
+  border: 3px solid plum;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 0 1rem;
+}
+.container input[type=submit],
+.container #chipsList button {
+  width: 10rem;
+  height: 3rem;
+  border: 2px solid royalblue;
+  background-color: white;
+  color: royalblue;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: ease 0.2s;
+  transition-property: background-color, color;
+}
+.container input[type=submit]:hover,
+.container #chipsList button:hover {
+  background-color: royalblue;
+  color: white;
+}
+.container #addChipForm {
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+.container #chipsList {
+  margin-top: 1.5rem;
+  list-style-type: none;
+}
+.container #chipsList li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: crimson;
+  font-weight: 900;
+}
+.container #chipsList li button {
+  width: 7rem;
+  height: 2rem;
+  margin-left: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
